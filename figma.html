@@ -2,34 +2,87 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devendra Raj Gautam | Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);"
-        width="800"
-        height="450"
-        src="https://embed.figma.com/design/J4bm1GbmYZmSd27deEUQLZ/My-Portfolio?node-id=1-2&embed-host=share"
-        allowfullscreen>
-</iframe>
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);"
-        width="800"
-        height="450"
-        src="https://embed.figma.com/design/J4bm1GbmYZmSd27deEUQLZ/My-Portfolio?node-id=37-2&embed-host=share"
-        allowfullscreen>
 
-</iframe>
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);"
-        width="800"
-        height="450"
-        src="https://embed.figma.com/design/J4bm1GbmYZmSd27deEUQLZ/My-Portfolio?node-id=40-97&embed-host=share"
-        allowfullscreen>
-</iframe>
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);"
-        width="800"
-        height="450"
-        src="https://embed.figma.com/design/J4bm1GbmYZmSd27deEUQLZ/My-Portfolio?node-id=40-146&embed-host=share"
-        allowfullscreen>
-</iframe>
+<nav class="navbar">
+  <div class="logo">Devendra Raj Gautam</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+  </ul>
+</nav>
+
+
+<main class="Text">
+  <div class="Text-left">
+    <h1>Shaping Identities for Those Ready to Rise Above the Noise.</h1>
+
+    <input type="checkbox" id="form-toggle" style="display:none;">
+
+    <label for="form-toggle" class="contact-btn">CONTACT ME</label>
+
+    <div class="overlay">
+      <div class="contact-card">
+        <label for="form-toggle" class="close">&times;</label>
+
+        <form action="https://formspree.io/f/mlgojypb" method="POST">
+          <div class="input-group">
+            <label for="user-name">Name</label>
+            <input type="text" id="user-name" name="name" required>
+          </div>
+
+          <div class="input-group">
+            <label for="user-email">Email</label>
+            <input type="email" id="user-email" name="email" required>
+          </div>
+
+          <div class="input-group">
+            <label for="user-message">Message</label>
+            <textarea id="user-message" name="message" rows="3"></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <div class="center-image">
+    <div class="profile-card">
+      <img src="img/Screenshot 2026-03-28 at 18.18.16.png" alt="Man in a park">
+      <h2>Devendra Raj Gautam</h2>
+    </div>
+  </div>
+
+  <div class="Text-right">
+      <span>★ Full stack Developer</span>
+      <span>★ UI/UX Design</span>
+      <span>★ Branding Design</span>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-center-content">
+    <span>Espoo Finland</span>
+    <span>18 MAR 2026</span>
+  </div>
+  <div class="footer-social-icons">
+
+    <a href="https://wa.me/+358449313717"  aria-label="Chat me on WhatsApp">
+      <img src="img/whatsapp.png" alt="WhatsApp Icon" aria-hidden="true"></a>
+
+    <a href="mailto:devendrg@metropolia.fi" aria-label="Send me an email">
+    <img src="img/gmail.png" alt="Gmail Icon" aria-hidden="true"></a>
+
+    <a href="tel:+358449313717" aria-label="Call my phone number">
+    <img src="img/phone-call.png" alt="Phone Icon" aria-hidden="true"></a>
+
+  </div>
+</footer>
 </body>
 </html>
