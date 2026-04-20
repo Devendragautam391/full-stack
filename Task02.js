@@ -1,5 +1,17 @@
-const inches = parseFloat(prompt('Enter length in inches:'))
-while (inches > 0) {
-  let centimeters = inches*2.54
-  alert(`${inches.toFixed(2)} inches = ${centimeters.toFixed(2)} centimeters`)
+let array = []
+    while (true) {
+      let number = prompt("Enter  numbers (or press enter to quit):")
+      if (number === "") {
+        break;
+      }
+      let num = parseFloat(number);
+      array.push(num);
+      array.sort((a, b) => b - a);
+    }
+let limit = Math.min(array.length, 5);
+console.log("Five highest number are :");
+for (let i = 0; i < limit; i++) {
+  console.log(array[i]);
 }
+
+

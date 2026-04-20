@@ -1,16 +1,17 @@
-let number = prompt("Enter a number (or press enter to stop) :")
-let Smallest  = parseFloat(number)
-let Largest = parseFloat(number)
-while (true) {
-  let number = prompt("Enter another number (or press enter to stop) :")
-  if (number === "") {
-    break;
-  }
-  let num = parseFloat(number)
-  if (num < Smallest) {
-    Smallest = num;
-  }if (num > Largest) {
-    Largest = num;
+let num = parseInt(prompt('Enter a number'));
+let num_is_prime = true;
+if (num < 2) {
+  alert(`${num} is not a prime number`);
+}else {
+  for (let i = 2; i <=Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      num_is_prime = false;
+      break;
+    }
   }
 }
-alert("Smallest number: " + Smallest.toFixed(2) + "\nLargest number: " + Largest.toFixed(2));
+if ( num_is_prime) {
+      alert(`${num} is a prime number`);
+    }else{
+      alert(`${num} is not a prime number`);
+}

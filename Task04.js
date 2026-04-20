@@ -1,14 +1,9 @@
-const secret_number = Math.floor(Math.random() * 10) + 1;
-while (true){
-  let guess_number = prompt("Enter your guess number: ");
-  let guess = parseInt(guess_number);
-
-  if (guess < secret_number){
-    alert('Too low! Try again.');
-  }else if (guess > secret_number){
-    alert('Too high! Try again.');
-  }else {
-    alert("Correct! You guessed it.");
-    break;
-  }
+cities = []
+for (let i = 1; i <= 5; i++) {
+  let city = prompt("Enter a city name");
+  cities.push(city);
+}
+alert("\nYou entered the following cities.");
+for (let index in cities) {
+  console.log(cities[index]);
 }
