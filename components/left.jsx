@@ -6,22 +6,19 @@ const Left = () => {
             <label htmlFor="form-toggle" className="contact-btn">CONTACT ME</label>
             <div className="overlay">
                 <div className="contact-card">
-                    <label htmlFor="form-toggle" className="close">&times;</label>
+                    <label htmlFor="form-toggle" className="close-btn">&times;</label>
                     <form action="https://formspree.io/f/mlgojypb" method="POST">
                         <div className="input-group">
-                            <label htmlFor="firstName">First Name:</label>
-                            <input name="firstName" id="firstName"
-                                   type="text" autoComplete="given-name"/>
-
+                            <label htmlFor="name">Name</label>
+                            <input type="text" id="name" placeholder="Enter your name"/>
                         </div>
                         <div className="input-group">
-                            <label htmlFor="email">Email:</label>
-                            <input name="email" id="email"
-                                   type="email" autoComplete="off"/>
+                            <label htmlFor="email">Email</label>
+                            <input type="email" id="email"/>
                         </div>
                         <div className="input-group">
                             <label htmlFor="message">Message</label>
-                            <input name="message" id="message" type="text" autoComplete="off"/>
+                            <textarea id="message" rows="1"></textarea>
                         </div>
                         <button type="submit" className="submit-btn">SUBMIT</button>
                     </form>
