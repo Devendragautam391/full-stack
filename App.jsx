@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
+import Home from './pages/home.jsx';
 import About from './pages/about.jsx';
 import Projects from './pages/projects.jsx';
 import Center from './components/center.jsx';
@@ -18,6 +19,14 @@ const App = () => {
                         <Left />
                     </div>
                 } />
+                <Route path="/contact" element={
+                    <div>
+                        <Center />
+                        <Right />
+                        <Left />
+                    </div>
+                } />
+                <Route path="/home" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/projects" element={<Projects />} />
             </Routes>
